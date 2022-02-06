@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- calendar css and js link  -->
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+
+    <!-- footer_icon link -->
+    <script src="https://kit.fontawesome.com/f11795d792.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+    <!-- side navbar -->
+    <div class="sidebar">
+        <div class="logo-details">
+
+            <img class="logo-img" src="images/club logo.jpeg " alt="">
+            <div class="logo_name">GCOEN</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+
+            <li>
+                <a href="#">
+                    <i id="home" class='bx bxs-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-globe'></i>
+                    <span class="links_name">About</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+            <li>
+                <a href="#calendar">
+                    <i class='bx bxs-calendar'></i>
+                    <span class="links_name">Calander</span>
+                </a>
+                <span class="tooltip">Calender</span>
+            </li>
+            <li>
+                <a href="https://manasiashelke.github.io/Blog_site/" target="_blank">
+                    <i class="fas fa-file-alt"></i>
+                    <span class="links_name">Blog page</span>
+                </a>
+                <span class="tooltip">Blog page</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-contact'></i>
+                    <span class="links_name">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+
+            <!-- <li class="profile">
+         <div class="profile-details">
+           <img src="profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Prem Shahi</div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li> -->
+        </ul>
+    </div>
+    <div class="home-section">
+        <h1 class="text"> Welcome to Astronomy Club</h1>
+        <div class="custom-shape-divider-bottom-1641552017">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+
+
+    <!------------------------------------==---- calender ---------------------------------------->
+
+
+    <h1 class="calendar_name">Astronomy Events</h1>
+
+    <div class="hero">
+
+        <div id="calendar"></div>
+
+    </div>
+
+
+
+    <!---------------------------------------- club Members-------------------------------------- -->
+
+    <div class="container">
+        <h1>Club Members</h1>
+        <input type="radio" name="dot" id="one">
+        <input type="radio" name="dot" id="two">
+        <input type="radio" name="dot" id="three">
+        <div class="main-card">
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                             <img src="images/dhananjay.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">Dhananjay Kajale</div>
+                            <div class="job">Co-ordinator</div>
+                        </div>
+                        <div class="media-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="images/aman.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">Aman</div>
+                            <div class="job">Sub Co-ordinator</div>
+                        </div>
+                        <div class="media-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="images/naresh.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">Naresh</div>
+                            <div class="job">Technical head</div>
+                        </div>
+                        <div class="media-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="images/manasi.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">Manasi Shelke</div>
+                            <div class="job">Web Devloper</div>
+                        </div>
+                        <div class="media-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="images/sonal.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">Sonal Dhopte</div>
+                            <div class="job">Content writer</div>
+                        </div>
+                        <div class="media-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="images/saher.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">Saher Pathan</div>
+                            <div class="job">Content writer</div>
+                        </div>
+                        <div class="media-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="images/bhavika.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">Bhavika Khode</div>
+                            <div class="job">Content writer</div>
+                        </div>
+                        <div class="media-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="images/bharati.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">Bharati Bandakar</div>
+                            <div class="job">Content writer</div>
+                        </div>
+                        <div class="media-icons">
+
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                             <img src="images/pooja.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">Pooja Sahu</div>
+                            <div class="job">Content writer</div>
+                        </div>
+                        <div class="media-icons">
+
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="button">
+            <label for="one" class=" active one" ></label>
+            <label for="two" class="two"></label>
+            <label for="three" class="three"></label>
+        </div>
+    </div>
+
+
+
+    <!---------------------------------------- footer ---------------------------------------->
+
+    <footer>
+        <div id="contact" class="">
+            <div class="info">
+                <p>GCOEN, Astronomy Club</p>
+                <p>gcoenastro@gmail.com</p>
+                <!-- <p> Contact No. 12345667890</p> -->
+            </div>
+            <div class="footer_icon">
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/gcoen_astronomy._club?utm_medium=copy_link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+            </div>
+            <div class="thankYou">Thank you</div>
+        </div>
+    </footer>
+
+
+
+<!-------------------------------------- javascript ---------------------------------------->
+
+
+
+
+    <!-- javasript tag -->
+    <script src="main.js"></script>
+    <!-- Add jQuery library (required) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#calendar').evoCalendar({
+
+                theme: "Midnight Blue",
+
+                calendarEvents: [
+                    {
+                        id: 'bHay68s', // Event's ID (required)
+                        name: "New Year", // Event name (required)
+                        date: "January/1/2020", // Event date (required)
+                        type: "holiday", // Event type (required)
+                        description: "Vacation leave for 3 days.",
+                        everyYear: true // Same event every year (optional)
+                    },
+                    {
+                        name: "Vacation Leave",
+                        badge: "02/13 - 02/15", // Event badge (optional)
+                        date: ["February/13/2020", "February/15/2020"], // Date range
+                        description: "Vacation leave for 3 days.", // Event description (optional)
+                        type: "event",
+                        color: "#63d867" // Event custom color (optional)
+                    }
+                ]
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>

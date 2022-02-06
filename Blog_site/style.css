@@ -1,0 +1,1184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*============================== preloader start ====================== */
+
+#preloader {
+    background-image: linear-gradient(to bottom, #151845, #181d5e, #282e68, #242c7e);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.moon {
+    background-color: #398eff;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.creater {
+    background-color: #1ca4f9;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.creater::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: -5px 0 0 2px #3184ff;
+    top: 2px;
+    left: 7px;
+}
+
+.c1 {
+    top: 27px;
+    left: 90px;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+}
+
+.c2 {
+    transform: scale(0.6);
+    bottom: 15px;
+    left: 61px;
+}
+
+.c3 {
+    transform: scale(0.75);
+    left: 15px;
+}
+
+.c4 {
+    transform: scale(1.18);
+    left: 107px;
+    top: 32px;
+}
+
+.c5 {
+    transform: scale(0.67);
+    left: 33px;
+    bottom: 4px;
+}
+
+.shadow {
+    height: 190px;
+    width: 190px;
+    box-shadow: 21px 0 0 5px rgb(0, 0, 0, 0.15);
+    border-radius: 50%;
+    position: relative;
+    bottom: 157.5px;
+    right: 46px;
+}
+
+.eye {
+    height: 12px;
+    width: 12px;
+    background-color: #0b0b0e;
+    border-radius: 50%;
+    position: relative;
+}
+
+.e1 {
+    bottom: 255px;
+    left: 59px;
+}
+
+.er {
+    bottom: 267px;
+    left: 101px;
+}
+
+.mouth {
+    height: 5px;
+    width: 10px;
+    position: relative;
+    border: 3px solid #161646;
+    border-top: none;
+    bottom: 262px;
+    left: 79px;
+    border-radius: 0 0 10px 10px;
+}
+
+.blush {
+    height: 7.5px;
+    width: 7.5px;
+    background-color: #1CA4F9;
+    position: relative;
+    border-radius: 50%;
+}
+
+.b1 {
+    bottom: 273px;
+    left: 50px;
+}
+
+.b2 {
+    bottom: 281px;
+    left: 115px;
+}
+
+.orbit {
+    color: black;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation: rotating 5s infinite linear;
+}
+
+@keyframes rotating {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rocket {
+    background-color: #fafcf2;
+    width: 25px;
+    height: 50px;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    left: -11px;
+    top: 115px;
+}
+
+.rocket::before {
+    position: absolute;
+    content: "";
+    background-color: #397EFE;
+    height: 20px;
+    width: 55px;
+    right: -15px;
+    border-radius: 50% 50% 0 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.rocket::after {
+    position: absolute;
+    content: "";
+    background-color: #397EFF;
+    height: 4px;
+    width: 15px;
+    right: -15px;
+    border-radius: 0 0 2px 2px;
+    bottom: -4px;
+    z-index: 4.3px;
+}
+
+.height {
+    height: 10px;
+    width: 10px;
+    background-color: #151845;
+    border: 2px solid #8802ec;
+    border-radius: 50%;
+    position: relative;
+    top: 17px;
+    left: 5px;
+}
+
+
+/*============================== preloader end ====================== */
+
+
+/*===== margin: top, right, bottom, left;==== */
+
+
+/*============================ Navbar start ===========================*/
+
+
+.nav_bar {
+    border: 2px solid rgb(24, 24, 71);
+    display: flex;
+    box-shadow: 2px 2px 5px black;
+    background-image: linear-gradient(to right bottom, #8000a7, #ad45cc);
+    margin-bottom: 0px;
+}
+
+.club_name {
+    padding: 10px 15px 15px 15px;
+    margin: 0px;
+    font-size: 2.5vw;
+    color: rgb(242, 242, 248);
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    text-shadow: 8px 8px 5px rgb(39, 37, 37);
+    word-wrap: none;
+}
+
+.nav_bar .nav_list {
+    margin: 0 20px 0 13%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: left;
+    list-style: none;
+}
+
+.nav_item {
+    padding: 21px 0px 0px 0px;
+    height: 10px;
+    font-size: 1.3vw;
+}
+
+.nav_link {
+    width: 160px;
+    text-decoration: none;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #f2f2f2;
+    float: right;
+    font-family: "Poppins", sans-serif;
+    z-index: -1;
+}
+
+.nav_link:hover {
+    color: #f2f2f2;
+}
+
+.fas {
+    overflow: hidden;
+    width: 28px;
+    height: 20px;
+    animation: rotate 1s infinite ease-in-out;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        /* font-size: 22px; */
+    }
+}
+.bx-menu:before {
+    content: "\eac1";
+    display: none;
+    color: #f2f2f2;
+}
+
+/*============================ Navbar End ===========================*/
+
+
+/*============================ sticky button ===========================*/
+
+
+/* .stickyIcon {
+    text-align: center;
+    z-index: -1;
+}
+
+.stickyIcon i {
+    position: fixed;
+    top: 70%;
+    color: rgb(8, 8, 8);
+    font-size: 50px;
+    background-image: linear-gradient(to bottom right, rgb(199, 2, 45), rgb(216, 4, 135), rgb(134, 1, 211), rgb(8, 103, 212));
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+    padding: 8px 8px 8px 8px;
+    margin: 5px 5px 5px 5px;
+   z-index: -1;
+}
+
+.stickyIcon i:hover {
+    font-size: 55px;
+    color: #f2f2f2;
+} */
+
+
+/*============ sticky button ===========*/
+
+
+/* =============Welcome page start ============ */
+
+.welcome_page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0px;
+    height: 95vh;
+    background-position: 50% 0;
+}
+
+.welcome_page .welcome_content p {
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+}
+
+.welcome_page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #8000a7;
+    clip-path: circle(21.8% at 94% 22%);
+    z-index: -1;
+    opacity: 0.3;
+}
+.welcome_page::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #8000a7;
+    clip-path: circle(14.2% at 11% 13%);
+    z-index: -1;
+    opacity: 0.3;
+}
+.custom-shape-divider-bottom-1641552017 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1641552017 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 92px;
+}
+
+.custom-shape-divider-bottom-1641552017 .shape-fill {
+    fill: #8000a7;
+}
+
+.welcome_page .welcome_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* float: right; */
+    margin: auto;
+    margin-top: 100px;
+    width: 50%;
+}
+
+.welcome_page img {
+    width: 450px;
+    height: 450px;
+    margin: 80px 20px 20px 40px;
+    animation: jump 3s ease-in-out infinite;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(-15px)
+    }
+    50% {
+        transform: translateY(10px)
+    }
+    100% {
+        transform: translateY(-15px)
+    }
+}
+
+.welcome_page .welcome_img:before {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 5%;
+    width: 90%;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(9px);
+}
+
+.welcome_page .welcome_content h1 {
+    text-align: center;
+    float: right;
+    font-size: 4.2vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #0b0b0e;
+    margin-top: 100px;
+}
+
+.welcome_page .welcome_content .welcome_button {
+    width: 16vw;
+    height: 2.8vw;
+    display: inline-block;
+    font-size: 1.5vw;
+    color: rgb(242, 242, 248);
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(to right bottom, rgb(28, 28, 29), rgb(42, 41, 43));
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.welcome_page .welcome_content .welcome_button:hover {
+    font-weight: bolder;
+}
+
+
+/* ==========Welcome page end============= */
+
+
+/* ===================Blog section start==================== */
+
+.blog_section {
+    margin: 0;
+    width: auto;
+    margin: 0px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ 
+
+.section_name {
+    text-align: center;
+    font-size: 3.5vw;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+.section_box {
+    width: 85%;
+    height: 20vw;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: auto;
+    margin: 10px 0px 15px 0px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19);
+}
+
+.blog_topic {
+    font-size: 2.8vw;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+.blog_p {
+    font-size: 1.2vw;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+
+.blog_section .section_box .blog_button {
+    width: 16%;
+    padding: 5px;
+    height: 2.8vw;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    display: block;
+    align-items: center;
+    align-self: center;
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(to right bottom, rgb(34, 34, 39), rgb(79, 78, 80));
+    box-shadow: 5px 10px 18px #1a191988;
+    cursor: pointer;
+    color: #f2f2f2;
+}
+
+.blog_button:hover {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.blog_button::selection {
+    color: blue;
+}
+
+.blog_img {
+    height: 94%;
+    width: 34%;
+    margin: 5px 10px 5px 5px;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 50px;
+    float: right;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19);
+}
+
+
+/* =========================Blog section end========================== */
+
+
+/* ============================  form start  ==========================*/
+
+.form_content {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form_content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #8000a7;
+    clip-path: circle(18.1% at 0 33%);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.form_content::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #8000a7;
+    /* clip-path: circle(26.8% at 100% 81%); */
+    /* clip-path: polygon(94% 0, 78% 39%, 98% 60%, 82% 100%, 97% 85%, 78% 13%); */
+    clip-path: polygon(93% 1%, 100% 16%, 100% 62%, 87% 98%, 100% 88%, 87% 19%);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+fieldset {
+    border: none;
+}
+
+.form_name {
+    text-align: center;
+    font-size: 4.1vw;
+    font-family: 'Mukta', sans-serif;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    /* float: right; */
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 10px;
+    width: 350px;
+    height: 37px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px #57555588;
+    font-family: "Poppins", sans-serif;
+}
+
+textarea {
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 14rem;
+    box-shadow: 5px 10px 15px #57555588;
+    font-family: "Poppins", sans-serif;
+    /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19); */
+}
+
+input[type=submit] {
+    background-image: linear-gradient(to right bottom, rgb(43, 41, 41), rgb(68, 64, 65), rgb(91, 87, 92));
+    width: 370px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 5px 10px 18px #57555588;
+    font-family: "Poppins", sans-serif;
+    color: #f2f2f2;
+    /* box-shadow:0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19); */
+}
+
+input[type=submit]:hover {
+    font-size: 21px;
+}
+
+.form_img {
+    width: 300px;
+    height: 300px;
+    margin-right: 160px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+
+/* ========form end ========== */
+
+
+/* ===========footer start========== */
+
+footer {
+    width: auto;
+    height: 60%;
+    /* background-image: linear-gradient(to right bottom, rgb(24, 23, 23), rgb(46, 42, 42), rgb(79, 78, 80)); */
+    background-image: linear-gradient(to right bottom, #3f0052, #8b02b4);
+}
+
+#contact {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #f2f2f2;
+    margin: auto;
+}
+
+.info p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.3vw;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.footer_icon i {
+    color: #f2f2f2;
+    align-items: center;
+    padding: 1.2rem 1rem 1.2rem 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.4vw;
+    text-decoration: none;
+    animation: footer_rotate 1s infinite ease-in-out;
+}
+
+@keyframes footer_rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.thankYou {
+    margin: auto;
+    padding: 0 0 14px 0;
+    font-size: 1.6vw;
+    font-family: "Poppins", sans-serif;
+    color: #f2f2f2;
+}
+
+.drop-cont {
+    display: none;
+}
+
+
+/*============================ media query=============================== */
+
+
+/* @media (max-width:1280px) {
+    .nav_bar .nav_list {
+        margin: 0 10px 0 13%;
+    }
+    .fas {
+        height: 14px;
+        width: 20px
+    }
+} */
+
+@media (max-width:1140px) {
+    .nav_bar .nav_list {
+        margin: 0 10px 0 7%;
+    }
+    .bx-menu:before {
+        content: "\eac1";
+        display: inline-block;
+    }
+}
+
+@media (max-width:1060px) {
+    .welcome_page .welcome_content h1 {
+        font-size: 6vw;
+    }
+    .welcome_page .welcome_content .welcome_button {
+        width: 20vw;
+        height: 4vw;
+        margin-top: 50px;
+        font-size: 2vw;
+    }
+}
+
+
+/*=======   Adding horizontal lines menu for mobile view   =======*/
+
+@media (max-width:1060px) {
+    .nav_bar .nav_list {
+        margin: 0 4% 0 42%;
+    }
+    .nav_item {
+        display: none;
+    }
+    .nav_link {
+        color: #f2f2f2;
+        margin-bottom: 15px;
+    }
+    .bx-menu {
+        font-size: 5vw;
+        Width: 40px;
+        Margin: 8px 8px;
+    }
+    .club_name {
+        font-size: 4.5vw;
+    }
+    .drop-cont {
+        Padding: 60px 20px 0px 0;
+        top: 55px;
+        Float: Left;
+        Position: Absolute;
+        Right: 0px;
+        display: none;
+        background-image: linear-gradient(to right bottom, #8000a7, #ad45cc);
+        Font-size: 20px;
+        Color: #f7f4f4;
+        Z-index: 1;
+        box-shadow: 30px 30px 35px 0px rgba(0, 0, 0, 100.0);
+        cursor: pointer;
+        width: 200px;
+        height: 100%;
+    }
+    .dropdown:hover .drop-cont {
+        display: block;
+    }
+    .fas {
+        width: 28px;
+        height: 20px;
+    }
+}
+
+
+/* =================================== media query for mobile ================================ */
+
+@media (max-width:980px) {
+    .club_name {
+        font-size: 3.5vw;
+    }
+    /* ===============welcome page ===============*/
+    .welcome_page .welcome_content h1 {
+        font-size: 6vw;
+    }
+    .welcome_page  img  {
+        width: 370px;
+        height: 370px;
+    }
+    .welcome_page .welcome_content p {
+        font-size: 15px;
+    }
+    .welcome_page .welcome_content .welcome_button {
+        width: 20vw;
+        height: 4vw;
+        margin-top: 50px;
+        font-size: 2vw;
+    }
+    /*=============== blog section ===============*/
+    .section_box {
+        margin: 15px 0 10px 0;
+        width: 90%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section_name {
+        font-size: 4vw;
+    }
+    .blog_section .section_box .blog_button {
+        width: 180px;
+        font-size: 2vw;
+        height: 43px;
+    }
+    .blog_img {
+        height: 250px;
+        width: 350px;
+        margin: 5px 10px 5px 5px;
+    }
+    .blog_topic {
+        font-size: 3.3vw;
+    }
+    .blog_p {
+        font-size: 2vw;
+    }
+    /*=============== footer ===============*/
+    .info p {
+        font-size: 1.9vw;
+    }
+    .footer_icon i {
+        font-size: 3.5vw;
+    }
+    .thankYou {
+        font-size: 2.5vw;
+    }
+}
+
+
+/* =================media query for normal devices ================== */
+
+@media (max-width: 775px) {
+    #preloader {
+        width: 100%;
+        height: 100%;
+    }
+    .moon {
+        height: 120px;
+        width: 120px;
+    }
+    .creater {
+        height: 30px;
+        width: 30px;
+    }
+    .c1 {
+        top: 27px;
+        left: 90px;
+    }
+    .c2 {
+        bottom: 23px;
+        left: 64px;
+    }
+    .c3 {
+        left: 2px;
+    }
+    .shadow {
+        height: 195px;
+        width: 160px;
+        bottom: 151.5px;
+        right: 50px;
+    }
+    .eye {
+        height: 10px;
+        width: 10px;
+        background-color: #0b0b0e;
+        border-radius: 50%;
+        position: relative;
+    }
+    .e1 {
+        bottom: 285px;
+        left: 38px;
+    }
+    .er {
+        bottom: 298px;
+        left: 75px;
+    }
+    .mouth {
+        height: 5px;
+        width: 10px;
+        bottom: 288px;
+        left: 55px;
+    }
+    .orbit {
+        height: 260px;
+        width: 240px;
+        margin: auto;
+    }
+    .rocket {
+        width: 25px;
+        height: 50px;
+    }
+    /*========================== navbar============= */
+    .nav_item {
+        font-size: 1.5vw;
+        padding: 15px 0px 10px 3px;
+    }
+    .club_name {
+        font-size: 3.7vw;
+    }
+    /* =============== welcome page ===============*/
+    .welcome_img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .welcome_img  {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: 0px;
+        top: 80px;
+    }
+
+    .welcome_page {
+        height: 100vh;
+    }
+     .welcome_page .welcome_content{
+      position: absolute;
+      top: 400px;
+     }
+    .welcome_page .welcome_content h1 {
+        font-size: 7vw;
+    }
+    .welcome_page .welcome_content p {
+        font-size: 2vw;
+    }
+    .welcome_page .welcome_content.welcome_button {
+        width: 28vw;
+        height: 6vw;
+        margin-top: 50px;
+        font-size: 3vw;
+    }
+    .welcome_page::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #8000a7;
+        clip-path: circle(29.3% at 6% 19%);
+        z-index: -1;
+        opacity: 0.3;
+    }.welcome_page::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #8000a7;
+        clip-path: circle(24.1% at 100% 68%);
+        z-index: -1;
+        opacity: 0.3;
+    }
+    /*=============== blog section ===============*/
+    .section_box {
+        width: 90%;
+        height: 480px;
+    }
+    .section_name {
+        font-size: 4.9vw;
+    }
+    .blog_section .section_box .blog_button {
+        width: 200px;
+        font-size: 2.7vw;
+        height: 45px;
+    }
+    .blog_img {
+        height: 200px;
+        width: 360px;
+    }
+    .blog_topic {
+        font-size: 4.3vw;
+        margin: 20px 0 3px 0;
+    }
+    .blog_p {
+        font-size: 2.2vw;
+    }
+    /* ==============feedback form ============== */
+    .form_name {
+        font-size: 6vw;
+    }
+    input {
+        width: 320px;
+        height: 33px;
+        font-size: 16px;
+    }
+    textarea {
+        font-size: 17px;
+        width: 320px;
+    }
+    input[type=submit] {
+        width: 335px;
+        height: 40px;
+        font-size: 2.5vw;
+    }
+    /* =============== footer =============== */
+    .info p {
+        font-size: 2.3vw;
+    }
+    .footer_icon i {
+        font-size: 3.8vw;
+    }
+    .thankYou {
+        font-size: 2.9vw;
+    }
+}
+
+
+/* ================mobile view media query=============== */
+
+@media (max-width:500px) {
+    .bx-menu {
+        font-size: 30px;
+    }
+    .club_name {
+        font-size: 5.1vw;
+    }
+    /* ===============welcome page ===============*/
+    .custom-shape-divider-bottom-1641552017 {
+        bottom: 96px;
+    }
+    .welcome_page .welcome_img:before{
+        display: none;
+    }
+    .welcome_page {
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .welcome_page .welcome_content {
+        margin: 1px 50% 0;
+        width: 90%;
+    }
+    .welcome_img img {
+        top: 0;
+        width: 150px;
+        height: 150px;
+        margin-top: 10px;
+        left: 0;
+        margin-left: 0;
+    }
+    .welcome_page .welcome_content h1 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+    .welcome_page .welcome_content p {
+        font-size: 10px;
+    }
+    .welcome_page .welcome_content .welcome_button {
+        width: 40vw;
+        height: 7vw;
+        font-size: 3.9vw;
+        margin-top: 0;
+    }
+    .nav_bar .nav_list{
+        margin: 0 4% 0 20%;
+    }
+    /*=============== blog section ===============*/
+    .section_box {
+        width: 90%;
+        height: 480px;
+    }
+    .section_name {
+        font-size: 7.5vw;
+        margin-top: 60vw;
+    }
+    .blog_section .section_box .blog_button {
+        width: 200px;
+        font-size: 3.7vw;
+        height: 40px;
+    }
+    .blog_img {
+        height: 200px;
+        width: 300px;
+    }
+    .blog_topic {
+        font-size: 7.7vw;
+    }
+    .blog_p {
+        font-size: 3.3vw;
+    }
+    /* ==============feedback form ============== */
+    .form_content::after {
+        display: none;
+    }
+    .form_img {
+        display: none;
+    }
+    .form_name {
+        font-size: 9vw;
+    }
+    input {
+        width: 280px;
+        height: 33px;
+        font-size: 15px;
+    }
+    textarea {
+        font-size: 16px;
+        width: 280px;
+    }
+    input[type=submit] {
+        width: 300px;
+        height: 40px;
+        font-size: 4vw;
+    }
+    /* =============== footer =============== */
+    .info p {
+        font-size: 3.5vw;
+    }
+    .footer_icon i {
+        font-size: 5.7vw;
+    }
+    .thankYou {
+        font-size: 4vw;
+    }
+}
+
+
