@@ -320,10 +320,10 @@ body {
 
 
 /*=============================== Club members =================================== */
-
+/* 
 .container {
     top: 48rem;
-    left: 17vw;
+   
     max-width: 950px;
     width: 100%;
     overflow: hidden;
@@ -357,17 +357,7 @@ body::before {
     transition: 1s;
 }
 
-#one:checked~.main-card {
-    margin-left: 0%;
-}
 
-#two:checked~.main-card {
-    margin-left: -100%;
-}
-
-#three:checked~.main-card {
-    margin-left: -200%;
-}
 
 .container .main-card .cards {
     width: calc(100% / 3 - 10px);
@@ -467,43 +457,145 @@ body::before {
     padding: 0;
     cursor: pointer;
     transition: all 0.5s ease;
-}
+} */
 
-.button label.active {
-    width: 50px;
-}
 
-#one:checked~.button .one {
-    width: 50px;
-}
 
-#one:checked~.button .two {
-    width: 15px;
-}
 
-#two:checked~.button .one {
-    width: 15px;
-}
+section{
+    position: relative;  
+    height: 450px;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    top: 48rem;
+    margin: 10px 10rem 10px 10rem;
+  }
+  
+  .swiper{
+    width: 850px;
+   
+  }
+  .swiper .myswiper .container{
+    margin-left: 10rem;
+  }
 
-#two:checked~.button .two {
-    width: 50px;
-}
-
-#three:checked~.button .one {
-    width: 15px;
-}
-
-#three:checked~.button .two {
-    width: 15px;
-}
-
-#three:checked~.button .three {
-    width: 50px;
-}
-
-input[type="radio"] {
-    display: none;
-}
+  .card{
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* .card::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: #7d2ae8;
+    border-radius: 20px 20px 0 0;
+  } */
+  
+  .card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+  }
+  
+  
+  
+  .swiper-pagination{
+    position: absolute;
+  }
+  
+  .swiper-pagination-bullet{
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: rgba(0, 67, 86, .8);
+  }
+  
+  .swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: rgba(0, 67, 86, .8);
+    transition: all 0.3s ease;
+  }
+  .swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: rgba(0, 67, 86, .8);
+  }
+  
+  
+  
+  
+   .box .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+  }
+  .box .content .img {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      padding: 3px;
+      background: rgba(0, 67, 86, .8);
+      margin-bottom: 14px;
+  }
+  .box .content .img img {
+      height: 100%;
+      width: 100%;
+      border: 3px solid #ffff;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+  .box .content .name {
+      font-size: 20px;
+      font-weight: 500;
+  }
+  
+  .box .content .job {
+      font-size: 20px;
+      color: rgba(0, 67, 86, .8);
+  }
+  
+  .box .content .media-icons {
+      margin-top: 10px;
+      display: flex;
+  }
+  
+  .media-icons a {
+      text-align: center;
+      line-height: 33px;
+      height: 35px;
+      width: 35px;
+      margin: 0 4px;
+      font-size: 20px;
+      color: #FFF;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      background: rgba(0, 67, 86, .8);
+      transition: all 0.3s ease;
+  }
+  
+  .media-icons a:hover {
+      color: rgba(0, 67, 86, .8);
+      background-color: #fff;
+      border-color: rgba(0, 67, 86, .8);
+  }
+  
+  .container .button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+  }
 
 @media (max-width: 768px) {
     .main-card .cards .card {
@@ -663,12 +755,12 @@ footer {
         position: static;
     }
     #calendar {
-        top: 82rem;
+        top: 81rem;
     }
     .calendar_name {
         font-size: 45px;
         position: relative;
-        top: 95px;
+        top: 100px;
     }
     .container {
         position: relative;
